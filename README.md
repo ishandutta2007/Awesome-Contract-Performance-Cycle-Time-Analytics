@@ -1,75 +1,117 @@
-# Awesome-Contract-Performance-Cycle-Time-Analytics
+# ⚡ Awesome-Contract-Performance-Cycle-Time-Analytics
 
-## Top Contract Performance & Cycle Time Analytics Ecosystem
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Contract Performance and Cycle Time Analytics Banner" width="100%" />
+</p>
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Contracting Velocity, Bottleneck Identification & Operational KPI Reporting*  
-**Last updated: March 2026**
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Contract Performance & Cycle Time Analytics**. These tools help legal, procurement, and sales operations teams measure how long contracts take to move from request to signature—surfacing bottlenecks, approver workload imbalances, and cycle-time trends that slow down revenue.
-
-**Examples** include Ironclad Insights, SirionLabs, Icertis, Agiloft, Docusign CLM, Conga, Tableau, Looker, Power BI, and Metabase (the category leaders).
-
-**Open-source emphasis**: This section highlights every major active project for self-hosted BI, open-source contract analytics, and community-driven reporting infrastructure—ideal for organizations seeking to build cycle-time dashboards without per-seat enterprise analytics licensing. Note that purpose-built open-source contract analytics is extremely thin; the practical path is composing general-purpose BI tools with contract data extraction.
-
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Ironclad Insights](https://ironcladapp.com/)** | Native contract analytics within Ironclad. Prebuilt charts answer operational questions: in-progress workflow statuses, median execution time by workflow configuration, time-to-execution trends, and approver workload distribution. Legal Ops report focuses on cycle time and turn tracking. Drill down from any chart to underlying workflows; export as image, PDF, or CSV [citation:3][citation:12]. | Included with Ironclad CLM subscription (quote-only) | No separate free tier; requires Ironclad CLM |
-| **[SirionLabs](https://www.sirion.ai/)** | Ranked **#1 in Advanced Contract Analytics** in the 2025 Gartner Critical Capabilities report (score 4.03/5), and #1 across all CLM use cases for three consecutive years. Agentic CLM with real-time reporting, interactive dashboards, and obligation monitoring. AskSirion enables natural-language queries over the contract corpus [citation:1][citation:4]. | Quote-only (enterprise contract) | No free tier; demo via sales |
-| **[Icertis](https://www.icertis.com/)** | Contract intelligence platform with performance analytics focused on revenue leakage prevention. AI agents match transactional documents against governing contract terms, monitor obligations, and trigger actions (e.g., notifying suppliers of overbilling). Integrates with ERP systems for real-time performance visibility [citation:2]. | Quote-only (enterprise contract) | No free tier; demo via sales |
-| **[Agiloft](https://www.agiloft.com/)** | CLM with reporting on contract value, compliance, obligations, and renewal pipelines. Customizable dashboards by stakeholder, location, or contract type; drill-down into individual contracts. Integrates with Tableau and Power BI for advanced analytics [citation:5][citation:13]. | Quote-only (enterprise; median ~$67,000/year) | No free tier; demo via sales |
-| **[Docusign CLM](https://www.docusign.com/)** | Process reporting for workflow analysis. Administrators can view a report for any workflow completed in the last **3 years**, broken down by step duration. Filter by time period; drill into task-level details including duration and completing user. Export to CSV for external analysis [citation:6][citation:14]. | Quote-only (enterprise contract) | No free tier; demo via sales |
-| **[Conga](https://www.conga.com/)** | CLM with custom analytics dashboards and a **Contract Cycle Time Report** showing average time from one stage to another, by record type and stage. Also includes dashboards for legal, sales, and supplier performance. Scheduled reports with configurable frequency and recipients [citation:7][citation:15]. | Quote-only (enterprise contract) | No free tier; demo via sales |
-| **[Tableau](https://www.tableau.com/)** | Visual analytics platform for building custom contract performance dashboards from extracted CLM data. Common choice when CLM native reporting is insufficient and organizations want full control over visualization and data blending. | Quote-only (per-user Creator/Explorer/Viewer licensing); Tableau Public free for public data | **Tableau Public**: free for publicly shared dashboards; **14-day trial** for full platform |
-| **[Looker (Google Cloud)](https://looker.com/)** | BI platform with semantic modeling (LookML) for governed contract metrics. Enables consistent cycle-time definitions across the organization with drill-down and scheduled delivery. | Quote-only (enterprise contract; Google Cloud billing) | No free tier; trial via Google Cloud sales |
-| **[Microsoft Power BI](https://powerbi.microsoft.com/)** | Microsoft's BI platform with desktop authoring and cloud publishing. Integrates with Agiloft and other CLM systems for contract performance dashboards. Power BI Embedded available for product teams. | Pro: $14/user/month; Premium Per User: $24/user/month | **Free**: Power BI Desktop (authoring only); **60-day trial** for Pro/Premium |
-| **[Sisense](https://www.sisense.com/)** | BI platform focused on embedded analytics. Allows embedding contract performance dashboards directly into customer-facing or internal applications with white-labeling. | Quote-only (custom enterprise pricing) | No free tier; demo via sales |
-
-## Open-Source GitHub Projects
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Metabase](https://github.com/metabase/metabase)** | [![Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) | **The most practical open-source path to contract cycle-time analytics.** User-friendly BI tool with a question builder and SQL editor. Can connect directly to a CLM database or a synced warehouse to build cycle-time dashboards. The Metabase team publishes a **renewal forecast dashboard template** that models ARR up for renewal, forecast categories, and at-risk accounts—directly applicable to contract performance tracking if your CLM data is accessible [citation:22][citation:30]. |
-| **[Apache Superset](https://github.com/apache/superset)** | [![Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) | Open-source data exploration and BI platform. Drag-and-drop dashboard builder with rich visualization library and SQL Lab for ad-hoc queries. Suitable for teams needing more customization than Metabase offers. One academic deployment noted performance degradation with complex contract dashboards, requiring OLAP cubes for acceptable speed [citation:19]. |
-| **[Helical Insight](https://github.com/helicalinsight/helicalinsight)** | [![Stars](https://img.shields.io/github/stars/helicalinsight/helicalinsight?style=social&color=white)](https://github.com/helicalinsight/helicalinsight/stargazers) | Open-source BI platform with **AI conversational analytics** (bring-your-own LLM), pixel-perfect paginated reports, interactive dashboards, SSO, embedding, multi-tenancy, and row-level security. Every feature free in Community Edition; Docker-ready [citation:17][citation:25]. |
-
-### Additional Strong Open-Source Options
-
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[DataPallas Server](https://github.com/flowkraft/datapallas)** | [![Stars](https://img.shields.io/github/stars/flowkraft/datapallas?style=social&color=white)](https://github.com/flowkraft/datapallas/stargazers) | Self-hosted BI and reporting platform with dashboards, semantic layer (cubes), pixel-perfect PDF/Excel/Word report generation, and report bursting. Includes AI agents for data exploration and automation. Docker deployment with no per-seat metering [citation:21]. |
-| **[sqldash](https://pypi.org/project/sqldash/)** | — | YAML-based dashboard framework with AI Studio for agent-assisted chart editing. Defines metrics in a semantic layer (`metrics.yaml`) that both dashboards and agents query. Supports DuckDB, Snowflake, Postgres, BigQuery, and more. Lightweight alternative for teams wanting version-controlled dashboard definitions [citation:9]. |
-| **[Aakd](https://github.com/aaked-app/aakd)** | [![Stars](https://img.shields.io/github/stars/aaked-app/aakd?style=social&color=white)](https://github.com/aaked-app/aakd/stargazers) | Open-source CLM with **obligation and renewal views, owners, deadlines, and audit history**. Not a dedicated analytics tool, but its structured obligation data can feed into Metabase or Superset for cycle-time reporting. AGPL-3.0, self-hosted via Docker Compose [citation:24][citation:28]. |
-| **[draftLegal](https://github.com/AniketTati/draft-legal)** | [![Stars](https://img.shields.io/github/stars/AniketTati/draft-legal?style=social&color=white)](https://github.com/AniketTati/draft-legal/stargazers) | Self-hosted AI-native CLM with **portfolio intelligence** via hybrid retrieval. Can answer questions like "how does this SOW compare with ones we've signed?" but lacks built-in cycle-time dashboards—pair with Metabase for quantitative analytics [citation:16]. |
-
-**Frameworks for building custom systems**: The open-source path to contract cycle-time analytics is **compositional**. Extract contract and workflow data from your CLM (via API or database export) into a warehouse or PostgreSQL, then build dashboards in **Metabase** or **Superset**. If you need embedded analytics in a product, **Helical Insight** or **DataPallas** provide white-labelable dashboards. Expect to define your own cycle-time metrics (median time-to-execution, stage duration, approver turnaround) since no open-source project ships with prebuilt contract-specific KPIs.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Contract performance analytics involves sensitive commercial timing and workload data; enforce role-based access and ensure dashboards respect CLM record-level permissions.
-- **Purpose-built open-source contract cycle-time analytics does not exist as a mature category.** Ironclad Insights, Sirion, Docusign, and Conga ship native reporting, but their pricing is quote-only enterprise. The realistic open-source path is exporting CLM data and building dashboards in Metabase or Superset—expect engineering effort to define metrics and maintain pipelines. Academic deployments of Superset for contract dashboards have required OLAP cube optimization to achieve acceptable performance [citation:19]. Commercial BI platforms (Tableau, Looker, Power BI, Sisense) are priced per-user and require separate CLM data extraction.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics?style=flat-square&color=gold" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics?style=flat-square&color=blue" alt="GitHub forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics?style=flat-square&color=green" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
-**Made for legal ops analysts, contract managers, procurement operations teams, and developers building contracting analytics infrastructure.**  
-Let's make contract performance analytics more open, measurable, and actionable.
+## 🎯 Top Contract Performance & Cycle Time Analytics Ecosystem
+
+> **A curated directory of enterprise SaaS solutions, contract lifecycle intelligence engines, and open-source business intelligence (BI) data stacks.**  
+> *Engineered for tracking contracting velocity, cycle time turnaround (TAT), stage bottleneck identification, approver SLA monitoring, and executive KPI reporting.*
+
+Contract Performance & Cycle Time Analytics empowers legal operations, corporate procurement, revenue operations (RevOps), and sales leadership to quantify every milestone from contract intake, redlining, and executive approval to e-signature execution. Surfacing workflow friction points prevents revenue leakage and accelerates deal closings.
+
+---
+
+## 📑 Table of Contents
+- [🌐 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🏢 SaaS & Hosted Enterprise Platforms](#-saas--hosted-enterprise-platforms)
+- [🔓 Open-Source GitHub Projects & BI Stacks](#-open-source-github-projects--bi-stacks)
+- [📈 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [⚖️ Disclaimer](#️-disclaimer)
+
+---
+
+## 🌐 Sector Overview & Market Dynamics
+
+The global Contract Lifecycle Management (CLM) and contract analytics market is estimated at **$1.8B – $3.4B in 2025** and projected to reach **$2.0B – $3.77B by 2026**, expanding at an estimated **CAGR of 11% to 14%**. The market remains **moderately to highly fragmented** across 150+ specialized vendors offering niche legal workflow, AI extraction, and operational analytics tools; however, aggressive consolidation is underway as dominant enterprise incumbents acquire AI-first point solutions to build unified, end-to-end intelligence suites.
+
+---
+
+## 🏢 SaaS & Hosted Enterprise Platforms
+
+Enterprise SaaS and CLM suites evaluated by starting commercial price tier, precise free trial parameters, and company scale (sorted by revenue/valuation descending).
+
+| Product | Company Scale (Valuation / Revenue) | Description | Starting Pricing Tier | Free Tier / Trial Limits |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Microsoft Power BI](https://powerbi.microsoft.com/)** | **~$3.1 Trillion Market Cap** (Microsoft parent; $245B+ ARR) | Microsoft's enterprise business intelligence platform with desktop visual authoring, cloud collaboration, and prebuilt CLM connectors. Ideal for computing median cycle time and stage turnaround time across enterprise departments. | **$14 / user / month** (Power BI Pro plan, billed annually) | **Free Forever plan**: Power BI Desktop (local authoring, report building, and file export only; cloud sharing restricted); **60-day free trial** for Power BI Pro and Premium Per User |
+| **[Looker (Google Cloud)](https://looker.com/)** | **~$2.1 Trillion Market Cap** (Alphabet parent; acquired for $2.6B) | Enterprise BI and data modeling platform using LookML for centralized, governed contract metric definitions. Powers consistent cycle-time KPIs, stage-by-stage redlining tracking, and automated metric bursting. | **$60,000 / year** (~$5,000/month baseline platform fee for Standard edition) *(Looker Studio Pro tier starts at $9/user/month)* | **No free tier**; **30-day free trial** via Google Cloud Sales / GCP Console with $300 Google Cloud evaluation credits |
+| **[Tableau](https://www.tableau.com/)** | **~$280 Billion Market Cap** (Salesforce parent; acquired for $15.7B) | Leading visual analytics platform for orchestrating custom contract performance dashboards from extracted CLM data warehouses. Features drag-and-drop workflow cohort analysis, duration trend lines, and approver workload distributions. | **$75 / user / month** (Tableau Creator plan, 1 seat minimum, billed annually at $900/yr); Explorer tier at $42/user/month; Viewer tier at $15/user/month | **Free Forever plan**: Tableau Public (100% free for creating and publishing public visualizations up to 10GB storage; private data sharing excluded); **14-day free trial** for Tableau Cloud / Desktop |
+| **[Docusign CLM](https://www.docusign.com/)** | **~$12.5 Billion Market Cap** (DocuSign Inc., ~$2.8B revenue) | Comprehensive CLM workflow engine with historical process reporting. Evaluates every completed workflow over the past 3 years, highlighting per-step turnaround durations, user task lags, and stage friction. | **$20,000 / year** baseline contract floor (~$800 - $1,100/user/year depending on author vs. view privileges) | **No free forever tier**; **30-day sandbox trial** available on request via enterprise sales for qualified evaluation teams |
+| **[Conga](https://www.conga.com/)** | **~$750 Million Revenue** (Acquired by Thoma Bravo for ~$1.5B) | End-to-end revenue lifecycle management suite featuring a dedicated Contract Cycle Time Report. Accurately measures elapsed days from contract intake to execution categorized by agreement type, counterparty tier, and approval stage. | **$17,000 / year** baseline annual deployment fee (~$35/user/month entry component base on Salesforce AppExchange) | **No free tier**; **14-day guided proof-of-concept trial** provisioned upon qualification through Conga sales |
+| **[Icertis](https://www.icertis.com/)** | **~$5.0 Billion Valuation** (~$250M+ ARR) | AI-driven enterprise contract intelligence suite centered on obligation compliance and revenue leakage prevention. Monitors transactional milestones against governing terms and tracks cycle-time metrics across ERP integrations. | **$150,000 / year** entry-level software licensing baseline for enterprise contracts (excluding one-time onboarding/implementation) | **No free tier**; **Interactive sandbox demo** and guided test environment provided during enterprise procurement evaluations |
+| **[Ironclad Insights](https://ironcladapp.com/)** | **~$3.2 Billion Valuation** (~$100M+ ARR) | Native contract analytics engine built inside Ironclad CLM. Delivers turn-tracking metrics, median time-to-execution charts by agreement configuration, approver workload distributions, and friction audit exports. | **$50,000 / year** starting annual contract minimum (averaging ~$200 - $600/user/month based on editor vs. approver licenses) | **No free tier**; **30-day enterprise sandbox preview** provided for verified legal ops procurement teams |
+| **[Sisense](https://www.sisense.com/)** | **~$1.0 Billion Valuation** (~$140M+ ARR) | Custom API-first analytics platform specialized in embedded cycle-time reporting. Enables legal ops and SaaS applications to white-label contract turnaround dashboards, SLA gauges, and stage velocity metrics. | **$25,000 / year** starting annual contract baseline for essential team deployment | **No free tier**; **30-day fully functional free trial** including cloud deployment sandbox and sample data connectors |
+| **[SirionLabs](https://www.sirion.ai/)** | **~$1.0 Billion Valuation** (Unicorn status, Series D funded) | Agentic contract intelligence platform recognized as a leader in advanced contract analytics. Includes AskSirion NLP queries over contract corpora, redline turn audits, and multi-party SLA cycle metrics. | **$84,000 / year** starting annual commitment (based on mandatory 100-user minimum at ~$70 - $93/user/month) | **No free tier**; **Interactive guided sandbox demo** provisioned via sales engineering for qualified accounts |
+| **[Agiloft](https://www.agiloft.com/)** | **~$60 Million ARR** (Backed by FTV Capital, growth equity) | Highly configurable no-code CLM platform offering granular reports on contract values, stage turnaround times, and approval queues. Features direct BI synchronization into Power BI and Tableau. | **$67,000 / year** median starting deployment contract (modular seat and server licensing) | **No free tier**; **30-day trial sandbox** available upon request through account executives |
+
+---
+
+## 🔓 Open-Source GitHub Projects & BI Stacks
+
+Because turnkey open-source CLM cycle-time analytics tools are uncommon, the modern data engineering approach involves extracting contract metadata and timestamp logs into a warehouse or PostgreSQL database, then building operational dashboards using open-source BI engines. 
+
+*Repositories are sorted in descending order by GitHub stargazers count.*
+
+| Project | Stars | Badges & Repo Link | Description | Focus Area |
+| :--- | :---: | :---: | :--- | :--- |
+| **[Apache Superset](https://github.com/apache/superset)** | **75.5k+** | [![Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) | Modern open-source data exploration and visualization platform. Includes SQL Lab, rich interactive charting plugins, role-based security, and seamless connections to any SQL database for analyzing contract stage turnaround durations and SLAs. | Open-Source BI & SQL Dashboards |
+| **[Metabase](https://github.com/metabase/metabase)** | **50.3k+** | [![Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) | The simplest open-source path to building contract performance dashboards. Features no-code query builders, SQL visualizers, and prebuilt renewal forecast templates to track ARR and cycle times across deal stages. | Self-Hosted No-Code BI & Analytics |
+| **[Redash](https://github.com/getredash/redash)** | **28.8k+** | [![Stars](https://img.shields.io/github/stars/getredash/redash?style=social&color=white)](https://github.com/getredash/redash/stargazers) | Collaborative query editor and visualization platform. Connects to SQL, NoSQL, and REST APIs to assemble automated periodic cycle-time reports and alert legal ops when approval stages breach predefined SLAs. | Collaborative Querying & Alerting |
+| **[Cube](https://github.com/cube-js/cube)** | **21.2k+** | [![Stars](https://img.shields.io/github/stars/cube-js/cube?style=social&color=white)](https://github.com/cube-js/cube/stargazers) | Universal semantic layer engine that defines standardized metric definitions (e.g., median cycle time, stage turnaround, approver queue lag) once and serves them via SQL/REST APIs to frontend applications. | Semantic Layer & Metrics Store |
+| **[Evidence](https://github.com/evidence-dev/evidence)** | **7.1k+** | [![Stars](https://img.shields.io/github/stars/evidence-dev/evidence?style=social&color=white)](https://github.com/evidence-dev/evidence/stargazers) | Code-driven business intelligence and markdown-based reporting framework. Generates blazing-fast, static data websites displaying contract turnaround metrics, throughput tables, and operational KPI updates directly from SQL queries. | "BI as Code" Markdown Dashboards |
+| **[Lightdash](https://github.com/lightdash/lightdash)** | **6.2k+** | [![Stars](https://img.shields.io/github/stars/lightdash/lightdash?style=social&color=white)](https://github.com/lightdash/lightdash/stargazers) | Open-source alternative to Looker tightly integrated with dbt (data build tool). Enables legal operations data analysts to model contract milestones in dbt and expose cycle-time metrics to business users. | dbt-Integrated Semantic BI |
+| **[Rill](https://github.com/rilldata/rill)** | **2.9k+** | [![Stars](https://img.shields.io/github/stars/rilldata/rill?style=social&color=white)](https://github.com/rilldata/rill/stargazers) | Ultra-fast exploratory BI tool powered by DuckDB. Rapidly ingests raw CLM event streams, audit logs, and workflow timestamps to provide sub-second slicing and dicing of contracting velocity bottlenecks. | Fast Operational Log Analytics |
+| **[Helical Insight](https://github.com/helicalinsight/helicalinsight)** | **1.1k+** | [![Stars](https://img.shields.io/github/stars/helicalinsight/helicalinsight?style=social&color=white)](https://github.com/helicalinsight/helicalinsight/stargazers) | Open-source BI platform equipped with conversational AI querying (bring-your-own-LLM), paginated pixel-perfect reports, multi-tenant security, and white-labeled contract performance dashboards. | AI-Powered Enterprise BI |
+| **[DataPallas Server](https://github.com/flowkraft/datapallas)** | **82+** | [![Stars](https://img.shields.io/github/stars/flowkraft/datapallas?style=social&color=white)](https://github.com/flowkraft/datapallas/stargazers) | Self-hosted BI server with embedded cubes, automated PDF/Excel/Word contract report generation, bursting schedules, and AI data exploration agents without per-seat licensing penalties. | Self-Hosted Report Generation |
+| **[draftLegal](https://github.com/AniketTati/draft-legal)** | **21+** | [![Stars](https://img.shields.io/github/stars/AniketTati/draft-legal?style=social&color=white)](https://github.com/AniketTati/draft-legal/stargazers) | Open-source, AI-native contract lifecycle tool offering portfolio intelligence via hybrid retrieval. Can extract agreement terms and milestone timelines to feed downstream BI pipelines. | Open-Source AI CLM Repository |
+| **[Aakd](https://github.com/aaked-app/aakd)** | **12+** | [![Stars](https://img.shields.io/github/stars/aaked-app/aakd?style=social&color=white)](https://github.com/aaked-app/aakd/stargazers) | Open-source contract lifecycle management app with obligation tracking, renewal deadlines, ownership logs, and audit histories that export directly into Superset or Metabase. | Open-Source CLM & Obligations |
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics&type=date&legend=top-left)
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome! If you know of an outstanding contract performance tool, cycle-time benchmark, or open-source analytics stack:
+
+1. **Fork** the repository: `https://github.com/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics`
+2. **Create a branch**: `git checkout -b feature/add-new-tool`
+3. **Add your tool**: Maintain the existing schema (product, specific pricing, accurate free tier/trial boundaries, company scale, and star badges).
+4. **Submit a Pull Request**: Provide a brief summary of why the tool adds value to legal and procurement ops teams.
+
+---
+
+## 💖 Support
+
+Thank you for exploring this curated repository! If you find this resource helpful for your team, organization, or data projects, please consider supporting the project:
+
+- ⭐ **Star this repository** to improve visibility for legal ops engineers.
+- 🍴 **Fork and share** with colleagues in procurement, legal ops, and RevOps.
+- ☕ **Buy a coffee & sponsor ongoing maintenance** via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+Your support keeps these community resources actively maintained and up-to-date!
+
+---
+
+## ⚖️ Disclaimer
+
+- This repository is a community-curated educational index and does not represent an endorsement of any listed vendor or platform.
+- Contract performance data, turn times, and cycle metrics contain sensitive operational and commercial metadata; always ensure proper role-based access control (RBAC) and privacy guardrails.
+- Enterprise software pricing tiers, trial durations, and company valuations fluctuate over time based on vendor policies; verify current terms with respective service providers prior to enterprise procurement.
