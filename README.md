@@ -1,6 +1,6 @@
 # Awesome-Contract-Performance-Cycle-Time-Analytics
 
-# Top Contract Performance & Cycle Time Analytics Ecosystem
+## Top Contract Performance & Cycle Time Analytics Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Contracting Velocity, Bottleneck Identification & Operational KPI Reporting*  
