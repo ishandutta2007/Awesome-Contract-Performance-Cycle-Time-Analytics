@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics?style=flat-square&color=gold" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics?style=flat-square&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics?style=flat-square&color=blue" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics?style=flat-square&color=green" alt="License" /></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
@@ -65,7 +65,7 @@ Because turnkey open-source CLM cycle-time analytics tools are uncommon, the mod
 
 *Repositories are sorted in descending order by GitHub stargazers count.*
 
-| Project | Stars | Badges & Repo Link | Description | Focus Area |
+| Project | GitHub_Stars | Badges & Repo Link | Description | Focus Area |
 | :--- | :---: | :---: | :--- | :--- |
 | **[Apache Superset](https://github.com/apache/superset)** | **75.5k+** | [![Stars](https://img.shields.io/github/stars/apache/superset?style=social&color=white)](https://github.com/apache/superset/stargazers) | Modern open-source data exploration and visualization platform. Includes SQL Lab, rich interactive charting plugins, role-based security, and seamless connections to any SQL database for analyzing contract stage turnaround durations and SLAs. | Open-Source BI & SQL Dashboards |
 | **[Metabase](https://github.com/metabase/metabase)** | **50.3k+** | [![Stars](https://img.shields.io/github/stars/metabase/metabase?style=social&color=white)](https://github.com/metabase/metabase/stargazers) | The simplest open-source path to building contract performance dashboards. Features no-code query builders, SQL visualizers, and prebuilt renewal forecast templates to track ARR and cycle times across deal stages. | Self-Hosted No-Code BI & Analytics |
@@ -93,7 +93,7 @@ Contributions are welcome! If you know of an outstanding contract performance to
 
 1. **Fork** the repository: `https://github.com/ishandutta2007/Awesome-Contract-Performance-Cycle-Time-Analytics`
 2. **Create a branch**: `git checkout -b feature/add-new-tool`
-3. **Add your tool**: Maintain the existing schema (product, specific pricing, accurate free tier/trial boundaries, company scale, and star badges).
+3. **Add your tool**: Maintain the existing schema (product, specific pricing, accurate free tier/trial boundaries, company scale, and Stars_Badges).
 4. **Submit a Pull Request**: Provide a brief summary of why the tool adds value to legal and procurement ops teams.
 
 ---
